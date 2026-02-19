@@ -18,7 +18,7 @@
 - 🌱 I’m currently learning **Advanced LLM Orchestration**
 - 👯 I’m looking to collaborate on **Open Source Projects**
 - 💬 Ask me about **Python, React, and LLMs**
-- 📫 How to reach me: **sanjibani@example.com** (Replace with your email)
+- 📫 How to reach me: **schoudhury1991@gmail.com**
 
 ---
 
