@@ -1,0 +1,53 @@
+name: 📰 Update Blog & Video Feed
+
+on:
+  schedule:
+    # Runs at 9 AM IST (3:30 AM UTC) every day
+    - cron: "30 3 * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    name: Update README with latest content
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 🛎 Checkout
+        uses: actions/checkout@v4
+
+      # ── YouTube Feed ──────────────────────────────────────────────────────────
+      # Replace YOUR_YOUTUBE_CHANNEL_ID with your actual Channel ID
+      # e.g. UCxxxxxxxxxxxxxxxxxxxxxxxx
+      - name: 📺 Update YouTube feed
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=YOUR_YOUTUBE_CHANNEL_ID"
+          max_post_count: 5
+          readme_path: README.md
+          comment_tag_name: "YOUTUBE"
+          template: "- 🎬 [$title]($url)"
+
+      # ── Substack Feed ─────────────────────────────────────────────────────────
+      # Replace YOUR_SUBSTACK_USERNAME with your actual Substack handle
+      # e.g. sanjibani
+      - name: ✍️ Update Substack feed
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://YOUR_SUBSTACK_USERNAME.substack.com/feed"
+          max_post_count: 5
+          readme_path: README.md
+          comment_tag_name: "BLOG-POST-LIST"
+          template: "- 📝 [$title]($url)"
+
+      - name: 🚀 Commit changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: auto-update blog and video feed [skip ci]"
+          git push
