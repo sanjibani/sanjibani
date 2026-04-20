@@ -6,8 +6,6 @@
 
 <div align="center">
   <a href="https://www.linkedin.com/in/sanjibani-c-096b283a/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>&nbsp;
-  <a href="https://substack.com/@sanjibani" target="_blank"><img src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=substack&logoColor=white"/></a>&nbsp;
-  <a href="https://www.youtube.com/@sanjibani" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>&nbsp;
   <img src="https://komarev.com/ghpvc/?username=sanjibani&label=Profile+Views&color=6e40c9&style=for-the-badge" />
 </div>
 
@@ -21,7 +19,7 @@ I'm a **senior software engineer with 10+ years of experience**, originally trai
 
 Today I focus on **Agentic AI systems** — building multi-agent pipelines that do real-world research, forensic analysis, and automation, not just chat. I particularly love the engineering challenge of making LLM-powered systems *reliable*, not just impressive.
 
-When I'm not shipping code, I **teach high school mathematics** and enjoy breaking down complex technical concepts into things anyone can understand. That same instinct drives my writing on Substack and my YouTube channel.
+When I'm not shipping code, I **teach high school mathematics** and enjoy breaking down complex technical concepts into things anyone can understand.
 
 > 🎯 *My superpower: I can navigate between a low-level circuit diagram and a high-level LLM orchestration graph without losing context. Rare combo.*
 
@@ -122,18 +120,6 @@ A conversational tool for looking up medicines, active ingredients, and substitu
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=sanjibani&theme=tokyo-night&hide_border=true&area=true" />
 </div>
-
----
-
-## ✍️ What I'm Creating
-
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
-
-<!-- YOUTUBE:START -->
-<!-- YOUTUBE:END -->
-
-*⚡ This section auto-updates via GitHub Actions — check back for my latest Substack posts and YouTube videos.*
 
 ---
 
