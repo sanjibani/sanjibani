@@ -16,6 +16,7 @@
 ## 👋 Who Am I?
 
 I'm a **senior software engineer with 10+ years of experience**.
+
 Today I focus on **Agentic AI systems** — building multi-agent pipelines that do real-world research, forensic analysis, and automation, not just chat. I particularly love the engineering challenge of making LLM-powered systems *reliable*, not just impressive.
 
 When I'm not shipping code, I **teach high school mathematics** and enjoy breaking down complex technical concepts into things anyone can understand.
