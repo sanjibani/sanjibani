@@ -17,7 +17,7 @@
 
 I'm a **senior software engineer with 10+ years of experience**.
 
-Today I focus on **Agentic AI systems** — building multi-agent pipelines that do real-world research, forensic analysis, and automation, not just chat. I particularly love the engineering challenge of making LLM-powered systems *reliable*, not just impressive.
+Today I focus on **Agentic AI systems** — multi-agent pipelines that do real-world research, forensic analysis, and automation, not just chat. I particularly love the engineering challenge of making LLM-powered systems *reliable*, not just impressive.
 
 When I'm not shipping code, I **teach high school mathematics** and enjoy breaking down complex technical concepts into things anyone can understand.
 
@@ -25,7 +25,7 @@ When I'm not shipping code, I **teach high school mathematics** and enjoy breaki
 
 ---
 
-## 🚀 Featured Projects
+## 🏗️ Building
 
 <table>
 <tr>
@@ -76,33 +76,27 @@ A conversational tool for looking up medicines, active ingredients, and substitu
 
 ---
 
-## 🛠️ Tech Arsenal
+## 🤝 Contributing to
 
-**Languages & Runtimes**
+PRs to projects I depend on. Sorted by repo stars, descending. *(merged) = in upstream, (open) = in review.*
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+- **[Next.js](https://github.com/vercel/next.js)** [![GitHub stars](https://img.shields.io/github/stars/vercel/next.js?style=flat&color=gold)](https://github.com/vercel/next.js) — `fix(eslint-plugin-next)` honor `pageExtensions` in `no-html-link-for-pages` (open); `docs` fix broken documentation links in examples and templates (open)
 
-**Frontend**
+- **[Deno](https://github.com/denoland/deno)** [![GitHub stars](https://img.shields.io/github/stars/denoland/deno?style=flat&color=gold)](https://github.com/denoland/deno) — `docs` fix dead MDN link to `Body` interface (open)
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+- **[Vite](https://github.com/vitejs/vite)** [![GitHub stars](https://img.shields.io/github/stars/vitejs/vite?style=flat&color=gold)](https://github.com/vitejs/vite) — `docs` fix broken and malformed documentation links (open)
 
-**AI / ML**
+- **[Astro](https://github.com/withastro/astro)** [![GitHub stars](https://img.shields.io/github/stars/withastro/astro?style=flat&color=gold)](https://github.com/withastro/astro) — `docs(agents)` remove dead `llms.txt` reference (**merged** ✅)
 
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-blueviolet?style=flat-square)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+- **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=flat&color=gold)](https://github.com/BerriAI/litellm) — `docs` fix broken links in README and enterprise docs (open)
 
-**Infra & Data**
+- **[PixiJS](https://github.com/pixijs/pixijs)** [![GitHub stars](https://img.shields.io/github/stars/pixijs/pixijs?style=flat&color=gold)](https://github.com/pixijs/pixijs) — `docs` remove dead `https://pixijs.io/customize` link in v7 migration guide (open)
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
+- **[Mattermost Mobile](https://github.com/mattermost/mattermost-mobile)** [![GitHub stars](https://img.shields.io/github/stars/mattermost/mattermost-mobile?style=flat&color=gold)](https://github.com/mattermost/mattermost-mobile) — `fix` disable syntax highlighting and line numbers for code blocks without language (open); `fix` date separator missing day of month on certain Android devices (open)
+
+- **[dataclasses-json](https://github.com/lidatong/dataclasses-json)** [![GitHub stars](https://img.shields.io/github/stars/lidatong/dataclasses-json?style=flat&color=gold)](https://github.com/lidatong/dataclasses-json) — `fix` respect `default_factory` for abstract generic fields in `from_dict` (open)
+
+- **[ORAssistant](https://github.com/The-OpenROAD-Project/ORAssistant)** [![GitHub stars](https://img.shields.io/github/stars/The-OpenROAD-Project/ORAssistant?style=flat&color=gold)](https://github.com/The-OpenROAD-Project/ORAssistant) — `fix` 4 runtime bugs: crash, streaming None, discarded replace, memory leak (open); `fix` 5 bugs: PDF crash, unused env var, missing state field, hardcoded model, typo (open)
 
 ---
 
