@@ -1,0 +1,65 @@
+name: Update Contributing to
+
+# Daily refresh of the "Contributing to" section in README.md.
+# Uses gh search to find all PRs by AUTHOR (default: sanjibani) and rewrites
+# the markdown between CONTRIBUTING-TO:START / CONTRIBUTING-TO:END markers.
+# No PAT needed — uses the auto-provisioned GITHUB_TOKEN.
+
+on:
+  schedule:
+    # 05:00 UTC = 10:30 IST — after the morning PR push, before lunch
+    - cron: "0 5 * * *"
+  workflow_dispatch:                       # manual "Run workflow" button
+    inputs:
+      author:
+        description: "GitHub username whose PRs to list"
+        required: false
+        default: "sanjibani"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run updater
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTHOR: ${{ github.event.inputs.author || 'sanjibani' }}
+        run: |
+          python3 scripts/update-contributions.py
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --cached --quiet README.md scripts/update-contributions.py; then
+            if git diff --quiet README.md scripts/update-contributions.py; then
+              echo "No changes — skipping commit."
+              exit 0
+            fi
+            git add README.md
+          else
+            git add README.md
+          fi
+          if git diff --cached --quiet; then
+            echo "Nothing staged. Done."
+            exit 0
+          fi
+          COUNT=$(git diff --cached --shortstat | awk '{print $1}')
+          git commit -m "chore(readme): auto-refresh Contributing to (${COUNT} PRs listed)"
+          git push
